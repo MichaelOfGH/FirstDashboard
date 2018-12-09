@@ -18,7 +18,11 @@
         android:orientation="horizontal"
         >
         <android.support.v7.widget.CardView
+            android:id="@+id/bank_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_width="160dp"
+            android:layout_margin="10dp"
             android:layout_height="160dp" >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,6 +31,8 @@
                 android:gravity="center"
                 >
                 <ImageView
+                    android:id="@+id/bankImg"
+                    android:transitionName="BankImg"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/cerclebackgroundpurple"
@@ -40,7 +46,7 @@
                     android:text="Banking"
                     android:layout_marginTop="8dp"
                     />
-        <view
+        <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/lightgray"
@@ -58,8 +64,10 @@
 
         </android.support.v7.widget.CardView>
 
-
         <android.support.v7.widget.CardView
+            android:id="@+id/idea_card"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_width="160dp"
             android:layout_height="160dp" >
             <LinearLayout
@@ -82,7 +90,7 @@
                     android:text="Idea"
                     android:layout_marginTop="8dp"
                     />
-                <view
+                <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightgray"
@@ -92,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your baknk activities"
+                    android:text="Check your bank activities"
                     android:textColor="@android:color/darker_gray"
                     />
 
